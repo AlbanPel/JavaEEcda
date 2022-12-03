@@ -11,6 +11,8 @@
     <title>Login</title>
 </head>
 <body>
+
+<c:out value="${MyCookie}" /></p>
 <c:if test="${!empty sessionScope.login}">
   <p><c:out value="Session: ${sessionScope.login}" /></p>
 </c:if>
