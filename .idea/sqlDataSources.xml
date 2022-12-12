@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="40b0eb4b-a2ed-4c4c-a57b-0bbf37e732f7" name="@localhost Mapping">
+      <data-sources db="22838138-cc81-4e10-9851-b3d97dfd45c4" ddl="14ce91c4-51e4-4f16-8061-9fa4a21311b5" />
+      <scope>
+        <node negative="1">
+          <node kind="database" negative="1">
+            <node kind="schema" negative="1" />
+          </node>
+          <node kind="schema" qname="main" />
+        </node>
+      </scope>
+    </mapping>
+    <mapping uuid="221af59a-4b48-43a1-a842-13cbc838046a" name="DDL Mapping">
+      <data-sources db="22838138-cc81-4e10-9851-b3d97dfd45c4" ddl="e62e5e0e-0279-47a1-aeb9-eb826862b9fd" />
+      <scope>
+        <node kind="database" negative="1" />
+      </scope>
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="e62e5e0e-0279-47a1-aeb9-eb826862b9fd" />
+          <option name="name" value="identifier.sqlite (DDL)" />
+          <option name="dbmsName" value="SQLITE" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$" />
+            </array>
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

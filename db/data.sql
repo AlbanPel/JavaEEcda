@@ -8,7 +8,3 @@ CREATE TABLE  profiles (
                         city VARCHAR(200) NOT NULL,
                         PRIMARY KEY ( id )
 ) ENGINE = INNODB;
-
-INSERT INTO profiles(firstName, lastName, gender, city) VALUES("Alban", "Pelissier", "M", "Paris");
-INSERT INTO profiles(firstName, lastName, gender, city) VALUES("Fred", "Apolonio", "M", "Melun");
-
