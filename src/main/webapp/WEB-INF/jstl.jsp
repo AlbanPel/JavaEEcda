@@ -5,7 +5,7 @@
   Time: 10:25
   To change this template use File | Settings | File Templates.
 --%>
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
         <title>JSTL</title>
@@ -16,15 +16,16 @@
         <h1><c:out value="Gestion des JSTL" /> </h1>
         <p>
             <c:out value="${ variableUndefine }">
-                Si ma valeur n 'est pas definie ou null cela retourne ce message
+                Si ma valeur n 'est pas définie ou null cela retourne ce message
             </c:out>
+
+            <c:out value="${undefine}" default="valeur" escapeXml=""/>
         </p>
         <p>
             <c:out value="${ variableUndefine }" escapeXml="false">
                 pas de protection contre la faille xss
             </c:out>
         </p>
-
 
         <c:set var="name" value="Alban" scope="page" />
         <p><c:out value="${name}" default="pas renseigné"/></p>
@@ -37,9 +38,10 @@
         <c:remove var="name" scope="page"/>
 
         <!--Conditions-->
-        <c:if test="${ 20 > 10 }" var="variable">
+        <c:if test="${ 20 > 10 }" scope="page" var="variable">
             C'est vrai ! 20 est bien plus grand que 10
         </c:if>
+
 
        <!--Les boucles-->
         <c:forEach var="i" begin="0" end="10" step="2">

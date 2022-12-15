@@ -22,6 +22,7 @@ public class ServletHome extends HttpServlet {
         cda.setName("Paris");
         cda.setActif(true);
         request.setAttribute("cda", cda);
+        System.out.println(cda.getName());
 
         this.getServletContext().getRequestDispatcher("/WEB-INF/home.jsp").forward(request, response);
     }
